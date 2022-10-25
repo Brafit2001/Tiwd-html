@@ -94,13 +94,14 @@ section{
 .Explore-World .Search{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
 
     position: relative;
     height: 125px;
     margin-top: -60px;
+    padding: 0 15px;
 
 
     background: rgba(255, 255, 255, 0.9);
@@ -114,8 +115,8 @@ section{
 .Explore-World .Search .item{
     display: flex;
     flex-direction: row;
-
-    margin: 3% 0 0 15px;
+    width: 23%;
+    padding: 5px;
 }
 
 .Explore-World .Search .item input{
@@ -136,10 +137,20 @@ section{
 }
 
 .Explore-World .Search .item .icon{
-    position: relative;
-    width: 25px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    fill: #5153e8;
+    background-color: #79b5be;
+    border-radius: 35px;
+    padding: 2px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.Explore-World .Search .item .icon svg{
+    width: 90%;
+    height: 90%;
 }
 
 .Explore-World .Search .text{
@@ -153,26 +164,21 @@ section{
     padding-left: 10px;
 }
 
-.Explore-World .Search .line{
-    padding-left: 20px;
-}
-
 .Explore-World .Search .find{
-
-    position: relative;
-
-    margin: 3% 10px 0 10px;
-    width: 92px;
-    height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8%;
+    padding: 10px 0;
 
     background: #434141;
-    border-radius: 10px;
+    border-radius: 20px;
 
 }
 
 .Explore-World .Search .find .loupe{
-    padding-left: 38%;
-    padding-top: 24%;
+    width: 40%;
+    height: 40%;
 }
 
 /*_____________________________YOUR SEARCH__________________________________*/
@@ -216,7 +222,6 @@ section{
 
 .Your-Search a{
     width: 261px;
-    height: 343px;
 }
 
 .Your-Search .card{
@@ -224,9 +229,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
 
     width: 100%;
-    height: 343px;
 
 
     background: #FFFFFF;
@@ -244,7 +249,7 @@ section{
 
 .Your-Search .card .card-img{
     width: 100%;
-    height: 40%;
+    height: 180px;
 
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
     border-radius: 10px;
@@ -279,16 +284,31 @@ section{
     margin: 0;
 }
 
+.Your-Search .date{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.Your-Search .date .icon{
+    width: 15px;
+    height: 15px;
+    fill: #6FA6AE;
+}
+
 .Your-Search .location{
     display: flex;
     flex-direction: row;
 
     margin-top: 10%;
+    column-gap: 5px;
 }
 
-.Your-Search .location img{
-    width: 21px;
-    height: 21px;
+.Your-Search .location .icon{
+    width: 20px;
+    height: 20px;
+    fill: #6FA6AE;
 }
 
 .Your-Search .location h2{
@@ -296,6 +316,33 @@ section{
     font-size: 16px;
     font-weight: 700;
 
+}
+
+.Your-Search .tickets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Your-Search .tickets .icon{
+    width: 20px;
+    height: 20px;
+    fill: #5153e8;
+}
+
+.Your-Search .tickets .icon:hover{
+    fill: white;
+}
+
+.Your-Search .tickets .ticket-col{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #79b5be;
+    padding: 5px 7px;
 }
 /*_____________________________________________________RANKING------------------------------------------*/
 
