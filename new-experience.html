@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Experiencias</title>
-    <meta name="description" content="Un sitio con diferentes experiencias de viaje para su disfrute.">
-    <meta name="author" content="Eduardo,Pablo,Augusto, Carlos & Marcelino">
+    <title>Eventps</title>
+    <meta name="description" content="Un sitio con diferentes entradas de eventos para su disfrute.">
+    <meta name="author" content="Gabriel,Pablo,Carlos & Marcelino">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,43 +47,46 @@
             </div>
             <form class="column right">
                 <div class="experience-name">
-                    <h2 class="title">Experience Name</h2>
+                    <h2 class="title">Event Name</h2>
                     <input id="exp-name" type="text" name="exp-name" required><span class="barra"></span>
                 </div>
-                <h3 class="description">Introduce here the corresponding text...</h3>
-                <div class="rectangle">
-                    <textarea class="text-area"></textarea><span class="barra2"></span>
-                </div>
                 <div class="location">
-                    <img src="assets/cards/place.png" alt="">
-                    <div class="text">
-                        <input class="item" id="experience_location" type="text"><span class="barra"></span>
-
-                    </div>
-
+                    <h2 class="title">City</h2>
+                    <input class="item" id="experience_location" type="text"><span class="barra"></span>
+                </div>
+                <div class="hall">
+                    <h2 class="title">Event Hall</h2>
+                    <input class="item" id="event_hall" type="text"><span class="barra"></span>
                 </div>
                 <div class="collection-interests">
-                    <div class="item">
-                        <img class="icon" src="assets/icons/location.svg" alt="">
+                    <div class="content">
+                        <div class="item">
                         <div class="text">
-                            <h2 class="green">Collection</h2>
+                            <img class="icon" src="assets/icons/location.svg" alt="">
+                            <h2 class="green">Category</h2>
+                        </div>
                             <select name="collections">
                                 <option value="0">Choose a collection</option>
-                                <option value="1">Spring</option>
-                                <option value="2">Summer</option>
-                                <option value="3">Autumn</option>
-                                <option value="4">Winter</option>
+                                <option value="1">Concert</option>
+                                <option value="2">Festival</option>
+                                <option value="3">Museum</option>
+                                <option value="4">Sport Event</option>
                             </select>
+
+                    </div>
+                        <img class="line" src="assets/icons/line.png" alt="">
+                        <div class="item">
+                            <div class="text">
+                                <img class="icon" src="assets/icons/libro.svg" alt="">
+                                <h2 class="green">Date</h2>
+                            </div>
+                            <div>
+                                <input type="date" placeholder="Add the interests"><span class="barra"></span>
+                            </div>
+
                         </div>
                     </div>
-                    <img class="line" src="assets/icons/line.png" alt="">
-                    <div class="item">
-                        <img class="icon" src="assets/icons/libro.svg" alt="">
-                        <div class="text">
-                            <h2 class="green">Interests</h2>
-                            <input type="text" placeholder="Add the interests"><span class="barra"></span>
-                        </div>
-                    </div>
+
                 </div>
                 <button id="add_new_opinion" type="button">Publish this new Experience</button>
             </form>

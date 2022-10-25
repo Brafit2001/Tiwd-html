@@ -27,7 +27,7 @@
 }
 
 main{
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 section{
@@ -113,24 +113,8 @@ section{
     color: var(--green-main);
 }
 
-
-.Add-exp .description{
-    font-family: var(--font-family-nunito_sans);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-
-    /* Grey */
-
-    color: #434141;
-
-}
-.Add-exp .right .location{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+.Add-exp .location input{
+    width: 90%;
 }
 
 .Add-exp .location img{
@@ -142,13 +126,11 @@ section{
     width: 90%;
 }
 
-
 .Add-exp .collection-interests{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+
 
     position: relative;
     height: 125px;
@@ -162,11 +144,20 @@ section{
     border-radius: 32px;;
 }
 
+.Add-exp .collection-interests .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+}
 
 .Add-exp .collection-interests .item{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80px;
 }
 
 .Add-exp .collection-interests .item .icon{
@@ -178,7 +169,17 @@ section{
 
 .Add-exp .collection-interests .text{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+
+}
+
+.Add-exp .collection-interests .icon-text{
+    display: flex;
+    flex-direction: row;
 
     font-family: var(--font-family-nunito_sans);
     font-style: normal;
