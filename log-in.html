@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Travel.int - Log in</title>
+    <meta name="description" content="Un sitio con diferentes experiencias de viaje para su disfrute.">
+    <meta name="author" content="Eduardo,Pablo,Augusto, Carlos & Marcelino">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/header_&_footer.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-600px.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-700px.css">
+    <link rel="stylesheet" href="style/log-in.css">
+    <link rel="stylesheet" href="style/responsive/log-in-600px.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/responsive/menu-600px.css">
+
+</head>
+
+<body>
+    <header id="header"></header>
+    <section class="log_sign_container">
+
+        <!--Seccion de opciones-->
+        <div id="options_container">
+            <button class = "options_log_sign" id="sign_up_button" onclick=go_to_signUp()>Sign up
+            </button>
+
+            <button class = "options_log_sign" id="log_in_button" onclick=go_to_logIn()>Log in
+            </button>
+        </div>
+
+        <!--Seccion de inputs-->
+        <form id="inputs_containers">
+            <div class="input_field">
+                <input type="text" name="contact" id="contact_input" placeholder="Write your email or phone" required>
+                <span class="barra"></span>
+            </div>
+            <div class="input_field">
+                <input type="text" name="password" id="password_input" placeholder="Write your password" required>
+                <span class="barra"></span>
+            </div>
+
+        </form>
+
+        <!--Seccion de confirm button-->
+        <div id="confirm_button_containter">
+            <button id="confirm_button" onclick=log_in()>Log in
+            </button>
+
+        </div>
+
+    </section>
+    <footer id="footer"></footer>
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/sign-up_&_log-in.js"></script>
+    <script src="script/go_to.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+</html>

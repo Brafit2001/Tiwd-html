@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Travel.int - Sign up</title>
+    <meta name="description" content="Un sitio con diferentes experiencias de viaje para su disfrute.">
+    <meta name="author" content="Eduardo,Pablo,Augusto, Carlos & Marcelino">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/header_&_footer.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-600px.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-700px.css">
+    <link rel="stylesheet" href="style/sign-up.css">
+    <link rel="stylesheet" href="style/responsive/sign-up-600px.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/responsive/menu-600px.css">
+
+
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <!--Empieza el apartado sign up-->
+    <div class="log_sign_container">
+        <!--Seccion de opciones-->
+        <div id="options_container">
+            <button class = "options_log_sign" id="sign_up_button" onclick=go_to_signUp()>Sign up
+            </button>
+
+            <button class = "options_log_sign" id="log_in_button" onclick=go_to_logIn()>Log in
+            </button>
+        </div>
+
+        <!--Seccion de inputs-->
+        <form id="inputs_containers">
+            <div class="input_field">
+                <input type="text" id="username_input" placeholder="Write your username">
+                <span class="barra"></span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="contact_input" placeholder="Write your email or phone">
+                <span class="barra"></span>
+            </div>
+            <div class="input_field">
+                <input type="text" id="password_input" placeholder="Create your password">
+                <span class="barra"></span>
+            </div>
+
+            <!--Hay que darle una pensada a esto porque no cuento con la base de datos-->
+            <div class="input_field add-profile">
+                <button id="input_picture_container" onclick="">
+                    Add your profile picture
+                    <img src="./assets/icons/add_button.svg" alt="">
+                </button>
+            </div>
+
+        </form>
+
+        <!--Seccion de confirm button-->
+        <div id="confirm_button_containter">
+            <button id="confirm_button" onclick=sign_up()>Sign up
+            </button>
+
+        </div>
+
+    </div>
+    <!--Termina el apartado sign up-->
+
+    <footer id="footer"></footer>
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/sign-up_&_log-in.js"></script>
+    <script src="script/go_to.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+</html>

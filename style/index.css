@@ -1,0 +1,465 @@
+
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --main: rgba(67, 65, 65, 1);
+    --green-main: rgba(111, 166, 174, 1);
+    --hawkes-blue: rgba(213, 222, 255, 1);
+    --yellow: rgba(248, 251, 255, 1);
+    --orchid-white: rgba(255, 253, 242, 1);
+    --white: rgba(255, 255, 255, 0.902);
+
+    --font-size-xxxxxs: 10px;
+    --font-size-xxxxs: 12px;
+    --font-size-xxxs: 14px;
+    --font-size-xxs: 16px;
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+
+    --font-family-nunito_sans: 'Nunito Sans', sans-serif;
+    --font-family-roboto: "Roboto";
+    --font-family-sf_pro_display-medium: "SF Pro Display-Medium";
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+main{
+    padding: 0 20%;
+}
+
+
+section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/*___________________________________________EXPLORE WORLD________________________________*/
+.Explore-World{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+}
+
+.Explore-World .background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    position: relative;
+    width: 100%;
+    height: 514px;
+
+
+    background: linear-gradient(180deg, rgba(240, 255, 178, 0.4) 0%, rgba(255, 169, 169, 0) 73.35%), #FFF1E7;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 72px;
+}
+
+.Explore-World .background h1{
+    margin-top: 0;
+    font-family: var(--font-family-nunito_sans);
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 76px;
+}
+
+.Explore-World .background h3{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+
+    margin-top: 20px;
+
+}
+
+.Explore-World .background .edificio{
+    position: absolute;
+    width: 70% ;
+    height: 80%;
+    bottom: 0;
+
+}
+
+.Explore-World .Search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+
+    position: relative;
+    height: 125px;
+    margin-top: -60px;
+
+
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(32px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 32px;
+}
+
+.Explore-World .Search .item{
+    display: flex;
+    flex-direction: row;
+
+    margin: 3% 0 0 15px;
+}
+
+.Explore-World .Search .item input{
+    background: none;
+    color: #999;
+    font-size: 11px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #49454567;
+}
+
+.Explore-World .Search .item input:focus-visible{
+    border: none;
+    border-bottom: 2px solid rgba(255, 200, 200, 0.5);
+    outline: none;
+}
+
+.Explore-World .Search .item .icon{
+    position: relative;
+    width: 25px;
+    height: 30px;
+
+}
+
+.Explore-World .Search .text{
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+
+
+    padding-left: 10px;
+}
+
+.Explore-World .Search .line{
+    padding-left: 20px;
+}
+
+.Explore-World .Search .find{
+
+    position: relative;
+
+    margin: 3% 10px 0 10px;
+    width: 92px;
+    height: 66px;
+
+    background: #434141;
+    border-radius: 10px;
+
+}
+
+.Explore-World .Search .find .loupe{
+    padding-left: 38%;
+    padding-top: 24%;
+}
+
+/*_____________________________YOUR SEARCH__________________________________*/
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+.introduction .title{
+    font-size: 42px;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.introduction .description{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 16px;
+    margin: 0 0 5%;
+}
+
+/*____________________________________YOUR SEARCH________________________________*/
+
+.Your-Search{
+    width: 100%;
+}
+
+.Your-Search .column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    row-gap: 30px;
+    column-gap: 29px;
+}
+
+
+.Your-Search a{
+    width: 261px;
+    height: 343px;
+}
+
+.Your-Search .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 343px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+
+.Your-Search .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.Your-Search .card .card-img{
+    width: 100%;
+    height: 40%;
+
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.Your-Search .card h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin:0;
+    padding-bottom: 0;
+}
+
+.Your-Search .card h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin:0;
+}
+
+.Your-Search .card p{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.Your-Search .location{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10%;
+}
+
+.Your-Search .location img{
+    width: 21px;
+    height: 21px;
+}
+
+.Your-Search .location h2{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 16px;
+    font-weight: 700;
+
+}
+/*_____________________________________________________RANKING------------------------------------------*/
+
+.Ranking{
+    margin-bottom: 135px;
+}
+
+.Ranking .podium{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.Ranking .card2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 274px;
+    height: 361px;
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.Ranking .card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 330px;
+    height: 445px;
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+
+
+.Ranking .podium h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+    margin:0;
+}
+
+.Ranking .podium h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    /* Grey */
+
+    color: #434141;
+}
+
+.Ranking .profile-pic{
+    width: 148px;
+    height: 152px;
+    overflow: hidden;
+    margin-top: 20px ;
+    margin-bottom: 10px;
+
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+    border-radius: 98px;
+
+}
+
+.Ranking .profile-pic img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.Ranking .card1 .trophies{
+    margin: -20px auto;
+}
+
+/*__________________________________________FORM___________________________________*/
+form input:not([type=checkbox]) {
+    background: none;
+    color: #999;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #49454567;
+}
+
+form input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+
+form input:disabled{
+    outline: none;
+    color: #ddd;
+}
+
+form .rectangle{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+form textarea{
+    width: 100%;
+    resize: none;
+    height: 100%;
+
+    border: 2px solid #49454567;
+    outline: none;
+}
+
+form .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+form .barra::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #54f8bb, #53daf1);linear-gradient(to right, #54f8bb, #53daf1);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+form input:focus~.barra::before{
+    width: 105%;
+}
+
+form .barra2::before{
+    content: "";
+    border-style: solid;
+    border-width: 0;
+    height: 99%;
+    width: 0;
+    bottom: 0;
+    margin-bottom: -4px;
+    position: absolute;
+    border-image: linear-gradient(to right, #54f8bb, #53daf1) 1;
+    transition: 0.3s ease width;
+    left: 0;
+
+}
+
+form textarea:focus~.barra2::before{
+    border-width: 3px;
+    width: 99.5%;
+}
+

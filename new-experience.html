@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Experiencias</title>
+    <meta name="description" content="Un sitio con diferentes experiencias de viaje para su disfrute.">
+    <meta name="author" content="Eduardo,Pablo,Augusto, Carlos & Marcelino">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/new-experience.css">
+    <link rel="stylesheet" href="style/responsive/new-experiences-600px.css">
+    <link rel="stylesheet" href="style/header_&_footer.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-600px.css">
+    <link rel="stylesheet" href="style/responsive/header_&_footer-700px.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/responsive/menu-600px.css">
+
+
+
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <section class="Add-exp">
+            <div class="column left">
+                <div class="add-photo">
+                    <div class="big">
+                        <img src="assets/icons/camera.svg" alt="camera add icon">
+                    </div>
+                    <div class="smalls">
+                        <div class="small">
+                            <img src="assets/icons/camera.svg" alt="camera add icon">
+                        </div>
+                        <div class="small">
+                            <img src="assets/icons/camera.svg" alt="camera add icon">
+                        </div>
+                        <div class="small">
+                            <img src="assets/icons/camera.svg" alt="camera add icon">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <form class="column right">
+                <div class="experience-name">
+                    <h2 class="title">Experience Name</h2>
+                    <input id="exp-name" type="text" name="exp-name" required><span class="barra"></span>
+                </div>
+                <h3 class="description">Introduce here the corresponding text...</h3>
+                <div class="rectangle">
+                    <textarea class="text-area"></textarea><span class="barra2"></span>
+                </div>
+                <div class="location">
+                    <img src="assets/cards/place.png" alt="">
+                    <div class="text">
+                        <input class="item" id="experience_location" type="text"><span class="barra"></span>
+
+                    </div>
+
+                </div>
+                <div class="collection-interests">
+                    <div class="item">
+                        <img class="icon" src="assets/icons/location.svg" alt="">
+                        <div class="text">
+                            <h2 class="green">Collection</h2>
+                            <select name="collections">
+                                <option value="0">Choose a collection</option>
+                                <option value="1">Spring</option>
+                                <option value="2">Summer</option>
+                                <option value="3">Autumn</option>
+                                <option value="4">Winter</option>
+                            </select>
+                        </div>
+                    </div>
+                    <img class="line" src="assets/icons/line.png" alt="">
+                    <div class="item">
+                        <img class="icon" src="assets/icons/libro.svg" alt="">
+                        <div class="text">
+                            <h2 class="green">Interests</h2>
+                            <input type="text" placeholder="Add the interests"><span class="barra"></span>
+                        </div>
+                    </div>
+                </div>
+                <button id="add_new_opinion" type="button">Publish this new Experience</button>
+            </form>
+        </section>
+        <section class="What-Should-Know" onclick="deploy()">
+            <img class="element" src="assets/icons/mas.svg" alt="">
+            <h3 class="green">¿What you should know?</h3>
+        </section>
+        <section class="Add-info">
+
+            <div class="documentation">
+                <div class="icon">
+                    <img src="assets/icons/documentation.svg" alt="Documentation icon">
+                </div>
+                <div class="content">
+                    <h2 class="title">Documentation</h2>
+                    <form class="information">
+                        <div class="column">
+                            <div class="element">
+                                <h2>PASSPORT VALIDITY</h2>
+                                <input type="text" name="passport-validity" required><span class="barra"></span>
+
+                            </div>
+                            <div class="element">
+                                <h2>BLANK PASSPORT PAGES</h2>
+                                <input type="text" name="blank-passport-validity" required><span class="barra"></span>
+                            </div>
+                            <div class="element">
+                                <h2>TOURIST VISA REQUIRED</h2>
+                                <input type="text" name="tourist-visa-required" required><span class="barra"></span>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="element">
+                                <h2>VACCINATIONS</h2>
+                                <input type="text" name="vaccinations" required><span class="barra"></span>
+                            </div>
+                            <div class="element">
+                                <h2>CURRENCY RESTRICTIONS FOR ENTRY</h2>
+                                <input type="text" name="currency-restrictions-entry" required><span class="barra"></span>
+                            </div>
+                            <div class="element">
+                                <h2>CURRENCY RESTRICTIONS FOR EXIT</h2>
+                                <input type="text" name="currency-restrictions-exit" required><span class="barra"></span>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="transport">
+                <div class="icon">
+                    <img src="assets/icons/transport.svg" alt="Transport icon">
+                </div>
+                <div class="content">
+                    <h2 class="title">Transport</h2>
+                    <form class="information">
+                        <div class="rectangle">
+                            <textarea type="text" name="transport-information" required></textarea>
+                            <span class="barra2"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="budget">
+                <div class="icon">
+                    <img src="assets/icons/budget_icon.svg" alt="Budget icon">
+                </div>
+                <form class="content">
+                    <h2>Budget</h2>
+                    <h3>The average Budget to this trip is: ($per person)</h3>
+                    <div class="input-barra">
+                        <input id="budget_amount" min="0" type="number" name="budget-" required><span class="barra"></span>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="more-Information">
+                <div class="icon">
+                    <img src="assets/icons/more-information_icon.svg" alt="More information icon">
+                </div>
+                <form class="content">
+                    <h2>More information</h2>
+                    <div class="rectangle">
+                        <textarea type="text" name="more-information" required></textarea>
+                        <span class="barra2"></span>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/new-experience.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+</html>

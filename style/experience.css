@@ -1,0 +1,533 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --main: rgba(67, 65, 65, 1);
+    --green-main: rgba(111, 166, 174, 1);
+    --hawkes-blue: rgba(213, 222, 255, 1);
+    --yellow: rgba(248, 251, 255, 1);
+    --orchid-white: rgba(255, 253, 242, 1);
+    --white: rgba(255, 255, 255, 0.902);
+
+    --font-size-xxxxxs: 10px;
+    --font-size-xxxxs: 12px;
+    --font-size-xxxs: 14px;
+    --font-size-xxs: 16px;
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+
+    --font-family-nunito_sans: 'Nunito Sans', sans-serif;
+    --font-family-roboto: "Roboto";
+    --font-family-sf_pro_display-medium: "SF Pro Display-Medium";
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    padding: 0 20%;
+}
+
+section{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+/*________________________________________________PHOTOS______________________________________*/
+.Photos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    width: 100%;
+}
+
+.Photos .big{
+
+    height: 420px;
+    border-radius: 25px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.15));
+}
+
+.Photos .big img{
+    margin-top: -500px;
+    margin-left: -500px;
+}
+
+.Photos .smalls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Photos .smalls .small{
+    width: 30%;
+    height: 157px;
+    overflow:hidden;
+    border-radius: 15px;
+}
+
+.Photos .smalls img{
+    width: 100%;
+}
+
+.Photos .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Photos .social .save{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.Photos .social .save img{
+    width: 29%;
+}
+/*_________________________________________________________INFO+PHOTO___________________________________*/
+
+.Info\+Photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Info\+Photo .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 40%;
+
+}
+
+.Info\+Photo .text .green{
+    font-size: 36px;
+    height: 60px;
+}
+
+.Info\+Photo .text  p{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 24px;
+    height: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.Info\+Photo .location{
+    display: flex;
+    flex-direction: row;
+}
+
+.Info\+Photo .location img{
+    width: 21px;
+    height: 21px;
+}
+
+.Info\+Photo .location h2{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+/*_____________________________________________________WHAT SHOULD KNOW _______________________________*/
+
+.What-Should-Know{
+    display: flex;
+    flex-direction: column;
+}
+
+.What-Should-Know .green{
+    font-size: 36px;
+    height: 100px;
+}
+
+.What-Should-Know p{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+}
+/*_________________________________________DOCUMENTATION_________________________________*/
+.Documentation{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Documentation .content{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.Documentation .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.Documentation .column{
+    width: 40%;
+}
+
+.Documentation .element{
+    margin-bottom: 50px;
+}
+
+.Documentation .title{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* Grey */
+
+    color: #434141;
+}
+
+.Documentation h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.Documentation p{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+}
+
+/*_________________________________________TRANSPORT________________________________________*/
+.Transport{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Transport .title{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* Grey */
+
+    color: #434141;
+
+}
+
+.Transport .information{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+}
+/*_________________________________________BUDGET_________________________________*/
+.Budget{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Budget h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #434141;
+}
+
+.Budget .content h3{
+    display: flex;
+    flex-direction: row;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+}
+
+.Budget .content p{
+    margin-right: 5px;
+}
+/*_________________________________________ACCOMMODATION_________________________________*/
+
+.Accommodation{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Accommodation .content h2{
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #434141;
+}
+
+.Accommodation .content .not-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab .accommodation_content_ab_sub{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab .accommodation_content_ab_sub .accommodation_content_ab_sub_icon{
+    width: 80px;
+    height: 80px;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab .accommodation_content_ab_sub .accommodation_content_ab_sub_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
+    margin-top: 15px;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab .accommodation_content_ab_sub .accommodation_content_ab_sub_content h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: justify;
+
+    color: #434141;
+}
+
+.Accommodation .content .not-title .accommodation_content_ab .accommodation_content_ab_sub .accommodation_content_ab_sub_content h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: justify;
+
+    color: #434141;
+}
+/*_________________________________________MORE INFORMATION_________________________________*/
+.More-Information{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+    width: 1103px;
+
+    margin: 70px auto;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.More-Information .content h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #434141;
+}
+
+.More-Information .content p{
+    font-family: var(--font-family-nunito_sans);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: justify;
+
+}
+/*________________________________________________OPINIONS______________________________________*/
+
+.Opinions{
+    display:flex;
+    flex-direction: column;
+
+    margin: 60px 0;
+}
+
+.Opinions h2{
+    width: 1103px;
+    margin:0 auto;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+
+    color: #6FA6AE;
+
+}
+
+.Opinions #sub_opinions{
+    width: 1103px;
+    margin:0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Opinions #sub_opinions .opinion{
+    width: 1103px;
+    height: 196px;
+
+    margin: 20px 0;
+
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content{
+    display: flex;
+    flex-direction: row;
+    height: 196px;
+}
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_profile_picture{
+    width: 15%;
+    height: 80%;
+    overflow: hidden;
+
+    margin: auto 15px;
+
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+    border-radius: 98px;
+}
+.Opinions #sub_opinions .opinion .opinion_content img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    row-gap: 0;
+
+    margin: 15px 0 0 20px;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description h2{
+    width:auto;
+
+    margin: 0;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+
+    color: #434141;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description h3{
+    font-family: var(--font-family-nunito_sans);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #434141;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description .opinion_content_description_location{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description .opinion_content_description_location img{
+    width: 28px;
+    height: 28px;
+
+    filter: none;
+    border-radius: 0;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_description .opinion_content_description_location h2{
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #434141;
+}
+
+.Opinions #sub_opinions .opinion .opinion_content .opinion_content_review{
+    width: 60%;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: justify;
+
+    padding: 20px 40px 15px 0;
+}
+
+.Opinions #add_new_opinion{
+    background: #434141;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    width: 420px;
+
+    font-family: var(--font-family-nunito_sans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    color: white;
+
+    margin: 47px auto;
+    padding: 15px 40px;
+    cursor: pointer;
+}
