@@ -113,7 +113,7 @@ section{
     color: var(--green-main);
 }
 
-.Add-exp .location input{
+.Add-exp .location input, .Add-exp .hall input{
     width: 90%;
 }
 
@@ -208,7 +208,7 @@ section{
 
 
 
-.Add-exp #add_new_opinion{
+.Add-exp #add_ticket{
     background: #434141;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 15px;

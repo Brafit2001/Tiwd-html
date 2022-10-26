@@ -512,7 +512,7 @@ section{
     padding: 20px 40px 15px 0;
 }
 
-.Opinions #add_new_opinion{
+.Opinions #add_ticket{
     background: #434141;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
