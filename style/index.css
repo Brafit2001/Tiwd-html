@@ -26,7 +26,7 @@ a {
 }
 
 main{
-    padding: 0 20%;
+    padding: 0 15%;
 }
 
 
@@ -37,7 +37,11 @@ section{
 
 
 
-/*___________________________________________EXPLORE WORLD________________________________*/
+/*
+___________________________________________
+EXPLORE WORLD
+___________________________________________
+*/
 .Explore-World{
     display: flex;
     flex-direction: column;
@@ -136,21 +140,9 @@ section{
     outline: none;
 }
 
-.Explore-World .Search .item .icon{
-    width: 20px;
+.Explore-World .Search .item img{
     height: 20px;
-    fill: #5153e8;
-    background-color: #79b5be;
-    border-radius: 35px;
-    padding: 2px 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Explore-World .Search .item .icon svg{
-    width: 90%;
-    height: 90%;
+    padding: 4px;
 }
 
 .Explore-World .Search .text{
@@ -166,9 +158,10 @@ section{
 
 .Explore-World .Search .find{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 8%;
+    height: 60px;
+    width: 100px;
     padding: 10px 0;
 
     background: #434141;
@@ -177,11 +170,16 @@ section{
 }
 
 .Explore-World .Search .find .loupe{
-    width: 40%;
-    height: 40%;
+    width: 21px;
+    height: 21px;
 }
 
-/*_____________________________YOUR SEARCH__________________________________*/
+/*
+___________________________________________
+YOUR SEARCH
+___________________________________________
+*/
+
 
 .introduction{
     display: flex;
@@ -203,7 +201,11 @@ section{
     margin: 0 0 5%;
 }
 
-/*____________________________________YOUR SEARCH________________________________*/
+/*
+___________________________________________
+YOUR SEARCH
+___________________________________________
+*/
 
 .Your-Search{
     width: 100%;
@@ -219,32 +221,24 @@ section{
     column-gap: 29px;
 }
 
-
-.Your-Search a{
-    width: 261px;
-}
-
 .Your-Search .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 15px 0;
 
-    width: 100%;
-
+    width: 261px;
 
     background: #FFFFFF;
     box-shadow: 0 4px 45px -15px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
 }
 
-
 .Your-Search .card .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    padding: 10% 10% 0 10%;
 }
 
 .Your-Search .card .card-img{
@@ -292,11 +286,6 @@ section{
     align-items: center;
 }
 
-.Your-Search .date .icon{
-    width: 15px;
-    height: 15px;
-    fill: #6FA6AE;
-}
 
 .Your-Search .location{
     display: flex;
@@ -306,11 +295,6 @@ section{
     column-gap: 5px;
 }
 
-.Your-Search .location .icon{
-    width: 20px;
-    height: 20px;
-    fill: #6FA6AE;
-}
 
 .Your-Search .location h2{
     font-family: var(--font-family-nunito_sans);
@@ -327,23 +311,13 @@ section{
     cursor: pointer;
 }
 
-.Your-Search .tickets .icon{
-    width: 20px;
-    height: 20px;
-    fill: #5153e8;
-}
-
-.Your-Search .tickets .icon:hover{
-    fill: white;
-}
-
 .Your-Search .tickets .ticket-col{
     display: flex;
     flex-direction: row;
     column-gap: 5px;
     align-items: center;
     border-radius: 15px;
-    background-color: #79b5be;
+    background-color: #D6DFFF;
     padding: 5px 7px;
 }
 
@@ -351,21 +325,45 @@ section{
     display: none;
     flex-direction: row;
     margin-top: 15px;
-    column-gap: 15px;
     align-items: center;
     justify-content: center;
+}
+
+.Your-Search .admin-service .delete-rectangle{
+    display: flex;
+    width: 50%;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F81414;
+    border-bottom-left-radius: 25px;
+}
+
+.Your-Search .admin-service .edit-rectangle{
+    display: flex;
+    width: 50%;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    background-color: #27D3C9;
+    border-bottom-right-radius: 25px;
 }
 
 .Your-Search .admin-service .icon{
     width: 18px;
     height: 18px;
     fill: #5153e8;
-    background-color: #6FA6AE;
+    background-color: #D6DFFF;
     border-radius: 20px;
     padding: 8px;
 }
 
-/*__________________________________________FORM___________________________________*/
+/*
+___________________________________________
+FORM
+___________________________________________
+*/
+
 form input:not([type=checkbox]) {
     background: none;
     color: #999;
