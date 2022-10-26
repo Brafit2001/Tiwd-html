@@ -238,7 +238,7 @@ ___________________________________________
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    padding: 10% 10% 0 10%;
+    padding: 10% 10% 5% 10%;
 }
 
 .Your-Search .card .card-img{
@@ -324,7 +324,6 @@ ___________________________________________
 .Your-Search .admin-service{
     display: none;
     flex-direction: row;
-    margin-top: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -347,15 +346,6 @@ ___________________________________________
     align-items: center;
     background-color: #27D3C9;
     border-bottom-right-radius: 25px;
-}
-
-.Your-Search .admin-service .icon{
-    width: 18px;
-    height: 18px;
-    fill: #5153e8;
-    background-color: #D6DFFF;
-    border-radius: 20px;
-    padding: 8px;
 }
 
 /*
