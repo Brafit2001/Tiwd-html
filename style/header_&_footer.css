@@ -62,7 +62,12 @@ header .links .link{
     font-style: normal;
 }
 
-header .icons-log{
+header .icons-log, header .logged-items{
+    color: var(--black);
+    font-family: var(--font-family-nunito_sans);
+    font-size: 18px;
+    font-weight: 540;
+    font-style: normal;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +88,7 @@ header .icons-log #log-in{
     color: #434141;
 }
 
-header .icons-log #sing-up{
+header .icons-log #sing-up, header .logged-items #log-out{
     border: none;
     border-radius: 5px;
     width: 90px;

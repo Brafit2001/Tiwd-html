@@ -25,15 +25,26 @@ function popup(){
 }
 
 function enter_admin_mode(){
-    admin = true;
-    console.log("Set admin true");
+    if (admin === true){
+        admin = false;
+    }else if (admin === false){
+        admin = true;
+    }
+    console.log("Set admin ", admin);
 }
 
 function checkAdmin(){
     console.log("Checking...")
+    let event_buttons = $(".admin-service");
+    let event_creation = $(".create-event");
+
     if (admin === true){
-        $(".admin-service").css("display", "flex");
+        event_buttons.css("display", "flex");
+        event_creation.css("display", "flex");
         console.log("Changed css");
+    }else if (admin !== true){
+        event_buttons.css("display", "none");
+        event_creation.css("display", "none");
     }
 }
 
@@ -45,10 +56,15 @@ function eventsPage(){
     window.location.href = "experience.html";
 }
 
+function createEvent(){
+    window.location.href = "new-experience.html";
+}
+
 function setup(){
     load_header_footer();
     $(".ticket-col").click(addTicketsPage);
     $(".card-img").click(eventsPage);
+    $("#create_event_button").click(createEvent);
     setInterval(checkAdmin, 3000);
 }
 

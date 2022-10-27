@@ -148,14 +148,13 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: start;
     width: 100%;
 }
 
 .Add-exp .collection-interests .item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    row-gap: 20px;
 
     height: 80px;
 }
@@ -231,7 +230,6 @@ form input:not([type=checkbox]) {
     background: none;
     color: #999;
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
     border: none;
